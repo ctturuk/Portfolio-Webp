@@ -1,0 +1,109 @@
+/* Header ---------------------------------------------------------- */
+
+#banner {
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.banner-left,
+.banner-center,
+.banner-right {
+    width: 33.3%
+}
+
+.banner-left,
+.banner-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.banner-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 3rem;
+    height: 100px;
+}
+
+.banner-right ul {
+    display: flex;
+
+}
+
+.banner-right ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Main Page Content ---------------------------------------------------------- */
+
+#about,
+#projects,
+#skills,
+#contact {
+    width: 85%;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+
+    padding-bottom: 15px;
+}
+
+hr {
+    margin: 0;
+}
+
+/* About ---------------------------------------------------------- */
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about p {
+    padding-top: 15px;
+}
+
+.about-text {
+    width: 50%;
+    font-size: 1.25rem;
+}
+
+.profile-image {
+    height: 383px;
+    width: 383px;
+    background-image: url("../images/profile.photo.jpg");
+    background-position: center;
+    background-size:cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px;
+}
+
+/* Projects ---------------------------------------------------------- */
+
+#projects p,
+#projects a {
+    font-size: 1.25rem;
+    padding-top: 15px;
+}
+
+.project-entry {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Skills ---------------------------------------------------------- */
+
+#skills img {
+    width: 50px;
+    height: auto;
+    padding: 15px 10px;
+}
