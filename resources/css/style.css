@@ -1,3 +1,42 @@
+/* Main Page Content ---------------------------------------------------------- */
+
+body * {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+#about,
+#projects,
+#skills,
+#contact {
+    width: 70%;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #285943;
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #285943;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+p {
+    line-height: 2rem;
+}
+
+hr {
+    margin: 0;
+}
+
 /* Header ---------------------------------------------------------- */
 
 #banner {
@@ -23,7 +62,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 4rem;
     height: 100px;
 }
 
@@ -35,27 +74,6 @@
 .banner-right ul li {
     padding-left: 10px;
     padding-right: 10px;
-}
-
-/* Main Page Content ---------------------------------------------------------- */
-
-#about,
-#projects,
-#skills,
-#contact {
-    width: 85%;
-    padding: 25px 0;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 2rem;
-
-    padding-bottom: 15px;
-}
-
-hr {
-    margin: 0;
 }
 
 /* About ---------------------------------------------------------- */
@@ -82,7 +100,7 @@ hr {
     background-position: center;
     background-size:cover;
     border-radius: 50%;
-    box-shadow: 5px 5px 15px;
+    box-shadow: 5px 5px 15px #285943;
 }
 
 /* Projects ---------------------------------------------------------- */
@@ -91,10 +109,26 @@ hr {
 #projects a {
     font-size: 1.25rem;
     padding-top: 15px;
+
+}
+
+#projects a {
+    transition: all .2s ease-in-out;
+}
+
+#projects a:hover {
+    color: #285943;
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
+#projects p,
+#contact p {
+    font-weight: 500;
 }
 
 .project-entry {
-    width: 30%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,7 +137,35 @@ hr {
 /* Skills ---------------------------------------------------------- */
 
 #skills img {
+    transition: all .2s ease-in-out;
     width: 50px;
     height: auto;
-    padding: 15px 10px;
+    padding: 15px 15px;
+    position: sticky;
+}
+
+#skills img:hover {
+    width: 55px;
+    height: auto;
+    padding: 10px 10px;
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+/* Contact ---------------------------------------------------------- */
+
+#contact {
+    width: 100%;
+    background-color: #F8F32B;
+}
+
+.contact-container {
+    width: 70%;
+    margin: auto;
+}
+
+#contact img {
+    width: 50px;
+    height: auto;
+    padding-top: 15px;
 }
