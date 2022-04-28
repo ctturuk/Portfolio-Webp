@@ -47,7 +47,7 @@ hr {
 .banner-left,
 .banner-center,
 .banner-right {
-    width: 33.3%
+    width: 33%
 }
 
 .banner-left,
@@ -81,7 +81,7 @@ hr {
 #about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #about p {
@@ -105,30 +105,29 @@ hr {
 
 /* Projects ---------------------------------------------------------- */
 
-#projects p,
 #projects a {
     font-size: 1.25rem;
-    padding-top: 15px;
-
+    padding-top: 20px;
+    font-weight: 300;
 }
 
-#projects a {
+.project-entry a {
     transition: all .2s ease-in-out;
 }
 
-#projects a:hover {
+.project-entry a:hover {
     color: #285943;
-    transform: scale(1.1);
-    font-weight: 500;
+    transform: scale(1.2);
+    transform-origin: left;
 }
 
-#projects p,
+#projects a,
 #contact p {
     font-weight: 500;
 }
 
 .project-entry {
-    width: 35%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -168,4 +167,42 @@ hr {
     width: 50px;
     height: auto;
     padding-top: 15px;
+}
+
+/* Responsive Design Media Queries ---------------------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+#banner {
+    display: block;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #285943;
+}
+
+.banner-center,
+.banner-right {
+    width: 100%;
+    margin: auto;
+}
+
+.banner-left {
+    display: none;
+}
+
+.about-text {
+    width: 100%;
+    margin: auto;
+}
+
+.profile-image {
+    display: none;
+}
+
+#projects {
+    margin: auto;
+}
+
+.contact-container {
+        margin: auto;
+}
 }
